@@ -1,4 +1,4 @@
-from bottle import route, run, template, static_file
+from bottle import route, run, template, static_file, request
 
 @route('/static/<filename>')
 def server_static(filename):
@@ -19,5 +19,14 @@ def upload():
 @route('/recipes')
 def recipes():
     return template("Templates/recipes.tpl")
+
+@route('/uploading', method='POST')
+def do_upload():
+    data = request.files.data
+    if data and data.file:
+        raw = data.file.read() # This is dangerous for big files
+        filename = data.filename
+        return "Hello You uploaded %s (%d bytes)." % (filename, len(raw))
+    return "You missed a field."
 
 run(host='localhost', port=8080, debug=True)

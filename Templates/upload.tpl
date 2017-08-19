@@ -18,8 +18,12 @@
   </div>
 
   <div class="body">
-    <a>testing</a>
+    <form action="/uploading" method="post" enctype="multipart/form-data">
+      <input type="file" name="data" />
+      <input type="submit" value="Start upload" />
+    </form>
   </div>
+  
 
 </body>
 
