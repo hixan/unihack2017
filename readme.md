@@ -7,6 +7,8 @@ this will be an app/webapp that can tell you what is in your fridge/pantry and c
 TODO:
 - tests!
 + website, webserver, recognition
+- more tests
++ interface
 
 test
 testing 123
