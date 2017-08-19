@@ -62,7 +62,9 @@ body {
 }
 .sidebar-float{
   float:left;
-  margin-left:10px;
+  margin-left:1%;
+  width:15%;
+  white-space:nowrap;
 }
 .box {
   text-align:center;
@@ -121,4 +123,5 @@ sub-heading{
   border-radius:20px;
   margin:15px;
   overflow:hide;
+  padding:20px;
 }

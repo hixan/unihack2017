@@ -1,6 +1,6 @@
 from bottle import route, run, template, static_file, request, redirect
 import os
-print(os.system("pwd"))
+from Main.main import get_recipes
 
 @route('/static/<filename>')
 def server_static(filename):
@@ -17,7 +17,6 @@ def index():
 @route('/uploading', method='POST')
 def upload():
     ingredient = request.forms.getall('ingredient')
-    print(ingredient)
     return redirect("/recipes")
 
 @route('/about')
@@ -26,10 +25,10 @@ def upload():
 
 @route('/recipes')
 def recipes():
-    import Main.main
-    #test_data = [{"title":"testing", "title-link":"www.google.com", "yield":"12", "picture":"https://bottlepy.org/docs/dev/_static/banner_webland.png"}, {"title":"testing", "title-link":"www.google.com", "yield":"12", "picture":"https://bottlepy.org/docs/dev/_static/logo_nav.png"}, {"title":"testing", "title-link":"www.google.com", "yield":"12", "picture":"https://bottlepy.org/docs/dev/_static/logo_nav.png"}]
-    test_data_ingr = ["testing", "12", "wein", "milk", "egg", "flour"]
+    test_data_ingr = ["milk", "eggs", "flour", "rice", "ham", "bacon", "oil", "chicken", "buns"]
     test_data = get_recipes()
+    for line in test_data:
+        print(line)
     return template("Templates/recipes.tpl", recipes=test_data, ingredients=test_data_ingr)
 
 @route('/upload', method='POST')

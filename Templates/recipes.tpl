@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home</title>
+<title>Results</title>
 <link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.css">
 <link rel="stylesheet" href="static/main.css">
 
@@ -52,12 +52,13 @@
     <p><heading>Recipes</heading><br />
     </p>
     <table class="ui-box">
-      % for recipe in recipes:
+      % for key, value in recipes.items():
+        %print(key, value)
         <tr>
         <td class="recipe">
-          <div class="recipe-text"><a href={{recipe['title-link']}}>{{recipe['title']}}<br/></a>
-          <p>serves: {{recipe['yield']}}</a></div>
-          <img src={{recipe['picture']}} alt={{recipe['title']}} align-content="right" style="width:80%; margin-left:20%; max-height:500px;float:right;" >
+          <div class="recipe-text"><a href={{value['link']}}>{{value['title']}}<br/></a>
+          <p>serves: {{value['yield']}}</a></div>
+          <img src={{value['picLink']}} alt={{value['title']}} align-content="right" style="width:80%; margin-left:20%; max-height:500px;float:right;" >
         </td>
         </tr>
       % end
