@@ -14,7 +14,7 @@
   padding-top:5px;
   padding-left:20px;
   padding-bottom:10px;
-  color:#991133;
+  color:#880022;
   font-style:italic;
   text-decoration:none;
 }
@@ -28,7 +28,10 @@
   border-right-style:hidden;
   background-color:#333333;
 }
-
+body {
+    background-image: url("http://wallpapercave.com/wp/TjUG3t2.jpg");
+	background-repeat: repeat-x;
+}
 .nav-item{
   padding-left:2px;
   padding-right:2px;
@@ -64,8 +67,10 @@
 .body{
   border:2px;
   border-style:solid;
-  border-top-style:hidden;
   margin-left:2.5%;
   margin-right:2.5%;
+  margin-top:2.5%;
+  margin-bottom:2.5%;
   width:95%;
+  background-color: #aaffaa;
 }
