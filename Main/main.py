@@ -39,9 +39,10 @@ def get_recipes():
     ingredients.append('butter')
     print(ingredients)
 
-    rval = []
+    rval = {}
     for recipe in recipes:
         to_add = False
+        notfound = 0
         for ingredient in recipe['ingr']:
             #find if a word in tags for the fridge matches ingredient sentance
             for i in ingredients:
@@ -49,10 +50,8 @@ def get_recipes():
                     found = True
                     break
             else:
+                notfound += 1
                 break
-        else:
-            to_add = True
-        if to_add:
-            rval.append(recipe)
+        rval[notfound] = recipe
     return rval
     #print('rval: {}'.format(str(rval)))
