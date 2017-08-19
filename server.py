@@ -5,19 +5,19 @@ def server_static(filename):
     return static_file(filename, root='Templates/static')
 
 @route('/home')
-def hello():
+def home():
     return template("Templates/home.tpl")
 
 @route('/index')
-def hello():
+def index():
     return template("Templates/index.tpl")
 
 @route('/upload')
-def hello():
+def upload():
     return template("Templates/upload.tpl")
 
 @route('/recipes')
-def hello():
+def recipes():
     return template("Templates/recipes.tpl")
 
 run(host='localhost', port=8080, debug=True)
