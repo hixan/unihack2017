@@ -37,6 +37,7 @@ def get_recipes():
     ingredients.append('pepper')
     ingredients.append('spices')
     ingredients.append('butter')
+    ingredients = set(ingredients)
     print(ingredients)
     rval = {}
     for recipe in recipes:
