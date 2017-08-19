@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="utf-8" />
-<title>Index</title>
+<title>Upload</title>
 <link rel="stylesheet" href="main.css">
 </head>
 
