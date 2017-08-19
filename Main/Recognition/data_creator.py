@@ -20,7 +20,7 @@ for im_f in os.listdir(path):
                 #continue
             values = map(lambda x : int(x[1]), re.findall(r'(Left|Top|Right|Bottom)=(\d+)', tag))
             cropped = image.crop(values)
-            cropped.save('unsorted/'+str(count)+'.jpg', format='JPEG')
+            cropped.save('unsorted/'+tag.split()[0]+str(count)+'.jpg', format='JPEG')
             count = count + 1
 
 
