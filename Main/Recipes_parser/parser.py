@@ -1,6 +1,6 @@
 def parser(values):
   results = []
-  results2 = ""
+  results2 = []
   results3 = []
   results4 = []
   name = ""
@@ -10,17 +10,20 @@ def parser(values):
   for line in results:
     if(len(line) > 0):
       if((line[0] == '"')and(line.find(":")==-1)):
-        results2 = results2 + line
+        results2.append(line)
       if(line.find("title") != -1):
         if(len(results2) != 0):
           results4 = []
           results4.append(name)
           results4.append(results2)
           results3.append(results4)
-          results2 = ""
+          results2 = []
         name = line
   for line in results3:
-    if(line[1].find(values) != -1):
+    for item in line[1]:
+      for value in values:
+        if value not in item:
+          results2.append(item)
       print(line[0])
   print(values)
 parser('milk')
