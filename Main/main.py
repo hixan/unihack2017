@@ -51,8 +51,7 @@ def get_recipes():
                     break
             else:
                 notfound += 1
-                break
-        if(found != True):
+        if not found:
           rval[notfound] = recipe
     return rval
     #print('rval: {}'.format(str(rval)))
