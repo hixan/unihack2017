@@ -133,19 +133,19 @@
 "picLink": "https://images-gmi-pmc.edge-generalmills.com/a6ce84f5-17dc-40ce-b861-37a1d35d2db5.jpg",
 "link": "https://www.pillsbury.com/recipes/classic-chicken-pot-pie/1401d418-ac0b-4b50-ad09-c6f1243fb992",
 "ingr": {
-   "¼ cup (½ stick) unsalted butter"'
-	"1 large shallot, finely chopped"
-	"1 tablespoon chopped fresh thyme"
-	"⅓ cup Wondra or all-purpose flour, plus more for surface"
-	"3 cups low-sodium chicken broth"
-	"1 cup whole milk"
-	"Kosher salt and freshly ground black pepper"
-	"6 oz. carrots (about 6 small), peeled, chopped"
-	"4 cups coarsely chopped or shredded chicken meat"
-	"1½ cups frozen pearl onions, thawed"
-	"1½ cups frozen peas, thawed"
-	"¼ cup chopped fresh flat-leaf parsley"
-	"Hot sauce"
+   "¼ cup (½ stick) unsalted butter",
+	"1 large shallot, finely chopped",
+	"1 tablespoon chopped fresh thyme",
+	"⅓ cup Wondra or all-purpose flour, plus more for surface",
+	"3 cups low-sodium chicken broth",
+	"1 cup whole milk",
+	"Kosher salt and freshly ground black pepper",
+	"6 oz. carrots (about 6 small), peeled, chopped",
+	"4 cups coarsely chopped or shredded chicken meat",
+	"1½ cups frozen pearl onions, thawed",
+	"1½ cups frozen peas, thawed",
+	"¼ cup chopped fresh flat-leaf parsley",
+	"Hot sauce",
 	"Worcestershire sauce",
 	"1 sheet frozen puff pastry, thawed",
 	"1 large egg, beaten to blend"
