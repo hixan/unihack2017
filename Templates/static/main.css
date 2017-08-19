@@ -29,8 +29,7 @@
   background-color:#333333;
 }
 body {
-    background-image: url("http://wallpapercave.com/wp/TjUG3t2.jpg");
-	background-repeat: repeat-x;
+  background-color:#eeeeee;
 }
 .nav-item{
   padding-left:2px;
@@ -68,8 +67,7 @@ body {
   text-align:center;
 }
 .box {
-  background-color: #dfc8ca;
-  padding: 6.25rem 1.25rem;
+  text-align:center;
 }
 
 button, input {
@@ -85,7 +83,9 @@ button, input {
   cursor: pointer;
   display: inline-block;
   overflow: hidden;
-  padding: 0.625rem 1.25rem;
+  padding:10px;
+  border-radius:5px;
+  border:
 }
 
 .inputfile-1 + label {
