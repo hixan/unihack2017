@@ -45,7 +45,7 @@
       %for ingredient in ingredients:
         <input type="checkbox" name="ingredient" value={{ingredient}}> {{ingredient}}<br>
       %end
-      <input type="submit">
+      <input type="submit" style="width:50px; text-align:center;" value="Submit">
     </form>
   </div>
   <div class="body">
