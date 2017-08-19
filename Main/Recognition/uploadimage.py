@@ -62,6 +62,7 @@ def get_tags(encoded_image, service, logfile=None):
 class Tag_retriever(threading.Thread):
 
     def __init__(self, image_byte_array, method, return_keywords):
+        super().__init__()
         self.image_file = base64.b64encode(image_byte_array)
         self.method = method
         self.returnkw = return_keywords
@@ -70,12 +71,15 @@ class Tag_retriever(threading.Thread):
         self.url = 'http://smartvision.aiam-dh.com:8080/api/v1.0/tasks'
 
     def run(self, logfile=None):
-        print("starting upload for method: {}\nkeywords: {}\n...".format(self.method, self.returnkw), file=logfile)
+        print("starting upload for method: {}\nkeywords: {}\n...".format(self.method, self.returnkw), file=logfile)
         self.upload()
+        print(self.r_upload.text, file=logfile)
         print("starting analysis for method: {}\nkeywords: {}\n...".format(self.method, self.returnkw), file=logfile)
         self.start_analysis()
+        print(self.r_analysis.text, file=logfile)
         print("cleaning data for method: {}\nkeywords: {}\n...".format(self.method, self.returnkw), file=logfile)
         self.clean_server()
+        print(self.r_delete.text, file=logfile)
         json = self.r_analysis.json()['task']
         if self.returnkw is None:
             self.rval = json
@@ -115,14 +119,14 @@ def get_tags_text(image, outputfile):
         cropped = image.crop(values)
         cropped.save(cropped_byte_array, format='JPEG')
         cropped_byte_array = cropped_byte_array.getvalue()
-        cropped_retriever = Tag_retriever(cropped_byte_array, 'text1', ['description'])
+        cropped_retriever = Tag_retriever(cropped_byte_array, 'fridge', ['description'])
         textresult = cropped_retriever.run(open('NUL', 'w'))
         print('Tag "{}" at {} came up with this text:\n"{}"'.format(tag, ','.join(map(str, values)), textresult['description']), file=outputfile)
         rval[tag] = textresult['description']
     return rval
 
 if __name__ == '__main__':
-    with Image.open('sample images/pantry5.jpg', 'r') as image_file:
+    with Image.open('sample images/pantry2.jpg', 'r') as image_file:
         for key, value in get_tags_text(image_file, open('NUL', 'w')).items():
             print(key, '"'+value+'"')
 
