@@ -64,6 +64,36 @@ body {
   border-radius:5px;
 }
 
+.upload-box{
+  text-align:center;
+}
+.box {
+  background-color: #dfc8ca;
+  padding: 6.25rem 1.25rem;
+}
+
+button, input {
+  line-height: normal;
+}
+
+.inputfile + label {
+  max-width: 80%;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0.625rem 1.25rem;
+}
+
+.inputfile-1 + label {
+  color: #f1e5e6;
+  background-color: #d3394c;
+}
+
+
 .body{
   border:2px;
   border-style:solid;
