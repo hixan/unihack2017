@@ -10,10 +10,13 @@
 <body>
   <div class="header">
     <H1 class="header-text">Home</H1>
+    <ul class="header-nav">
+      <li class="nav-item"><a href="./upload.tpl">Upload a file</a></li>
+      <li class="nav-item"><a href="./index.tpl">Index</a></li>
+    </ul>
   </div>
 
 
-  <p class="testing">testing</p>
 </body>
 
 </html>
