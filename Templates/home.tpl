@@ -5,16 +5,31 @@
 <meta charset="utf-8" />
 <title>Home</title>
 <link rel="stylesheet" href="static/main.css">
+<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.css">
+
 </head>
 
 <body>
-  <div class="header">
+  <div>
     <H1 class="header-text"><a href="./home">Home</a></H1>
-    <ul class="header-nav">
-      <li class="nav-item"><a href="./upload">Upload a file</a></li>
-      <li class="nav-item"><a href="./index">Index</a></li>
-      <li class="nav-item"><a href="./recipes">Recipes</a></li>
-    </ul>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" onClick="onclickfunc()">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/home">Home</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/about">about</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </div>
   
   <div class="body">
@@ -34,6 +49,15 @@
 	
 	
   </div>
+  <script>
+    function onclickfunc(){
+      if (document.getElementById("bs-example-navbar-collapse-1").style.display=="none"){
+        document.getElementById("bs-example-navbar-collapse-1").style.display="initial"
+      }else{
+        document.getElementById("bs-example-navbar-collapse-1").style.display="none"
+      }
+    }
+  </script>
 
 </body>
 
