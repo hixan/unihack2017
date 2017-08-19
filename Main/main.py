@@ -3,14 +3,15 @@
 import os, json, io, re
 from PIL import Image
 
-import Recognition.uploadimage as up
+import Main.Recognition.uploadimage as up
 
-with open('Recipes_parser/Tests/basic_test_data.txt', 'r', encoding='utf8') as json_file:
+with open('Main/Recipes_parser/Tests/basic_test_data.txt', 'r', encoding='utf8') as json_file:
     recipes = json.load(json_file)['somthing']
     print(recipes)
 image = 'upload.jpg'
-with Image.open('upload.jpg', 'r') as image:
+with Image.open('Main/upload.jpg', 'r') as image:
     im_byte_arr = io.BytesIO()
+    image = image.convert("RGB")
     image.save(im_byte_arr, format='JPEG')
     im_byte_arr = im_byte_arr.getvalue()
     tag_retriever = up.Tag_retriever(im_byte_arr, 'tagging3', ['description'])
@@ -53,6 +54,6 @@ for recipe in recipes:
         to_add = True
     if to_add:
         rval.append(recipe)
-def get_ingredients():
+def get_recipes():
     return rval
-print('rval: {}'.format(str(rval)))
+#print('rval: {}'.format(str(rval)))

@@ -1,5 +1,6 @@
 from bottle import route, run, template, static_file, request, redirect
 import os
+print(os.system("pwd"))
 
 @route('/static/<filename>')
 def server_static(filename):
@@ -25,8 +26,10 @@ def upload():
 
 @route('/recipes')
 def recipes():
-    test_data = [{"title":"testing", "title-link":"www.google.com", "yield":"12", "picture":"https://bottlepy.org/docs/dev/_static/banner_webland.png"}, {"title":"testing", "title-link":"www.google.com", "yield":"12", "picture":"https://bottlepy.org/docs/dev/_static/logo_nav.png"}, {"title":"testing", "title-link":"www.google.com", "yield":"12", "picture":"https://bottlepy.org/docs/dev/_static/logo_nav.png"}]
+    import Main.main
+    #test_data = [{"title":"testing", "title-link":"www.google.com", "yield":"12", "picture":"https://bottlepy.org/docs/dev/_static/banner_webland.png"}, {"title":"testing", "title-link":"www.google.com", "yield":"12", "picture":"https://bottlepy.org/docs/dev/_static/logo_nav.png"}, {"title":"testing", "title-link":"www.google.com", "yield":"12", "picture":"https://bottlepy.org/docs/dev/_static/logo_nav.png"}]
     test_data_ingr = ["testing", "12", "wein", "milk", "egg", "flour"]
+    test_data = get_recipes()
     return template("Templates/recipes.tpl", recipes=test_data, ingredients=test_data_ingr)
 
 @route('/upload', method='POST')
