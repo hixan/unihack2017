@@ -18,7 +18,17 @@
   </div>
   
   <div class="body">
-    <a>testing</a>
+    <h2>Food in the Fridge</h2>
+	<p> </p>
+	<a><b>What is it?</b></a>
+	<p>Do you have ingrediandts/food in your fridge or pantry 
+	which you want to use to make yourself a decent meal? 
+	Well now it's easy! Just take or upload a photo and within 
+	a few secounds you'll have recipes in front of you. It also 
+	lets you know if you are one or two ingrediants off so you can
+	decide if you want to quickly duck down to the shops. </p>
+	<a><b>The Crew</b></a>
+	<p>Alex, Jacobus, Josh</p>
   </div>
 
 </body>
