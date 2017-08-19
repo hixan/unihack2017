@@ -18,7 +18,7 @@
   </div>
   
   <div class="body">
-    <h2>Food in the Fridge</h2>
+	<h2>Food in the Fridge</h2>
 	<p> </p>
 	<a><b>What is it?</b></a>
 	<p>Do you have ingrediandts/food in your fridge or pantry 
@@ -29,6 +29,10 @@
 	decide if you want to quickly duck down to the shops. </p>
 	<a><b>The Crew</b></a>
 	<p>Alex, Jacobus, Josh</p>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1200px-Good_Food_Display_-_NCI_Visuals_Online.jpg" 
+		alt="food" style="width:100%;height:80%;">
+	
+	
   </div>
 
 </body>
