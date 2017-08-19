@@ -1,0 +1,27 @@
+#!/usr/bin/python3
+
+from uploadimage import Tag_retriever as TR
+from pathlib import PurePath, Path
+import os, io, re
+from PIL import Image
+path = PurePath(PurePath(os.getcwd()).parent, 'Recognition', 'sample images')
+count = 0
+for im_f in os.listdir(path):
+    with Image.open(str(path)+'/'+im_f, 'r') as image:
+        byte_arr = io.BytesIO()
+        image.save(byte_arr, format='JPEG')
+        byte_arr = byte_arr.getvalue()
+        tr = TR(byte_arr, 'tagging3', ['description'])
+        tags = tr.run(open('NUL', 'w'))['description']
+        print(im_f)
+        for tag in tags:
+            print('\t {}'.format(tag))
+            #if not re.match(r'bottle', tag):
+                #continue
+            values = map(lambda x : int(x[1]), re.findall(r'(Left|Top|Right|Bottom)=(\d+)', tag))
+            cropped = image.crop(values)
+            cropped.save('unsorted/'+str(count)+'.jpg', format='JPEG')
+            count = count + 1
+
+
+

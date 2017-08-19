@@ -78,11 +78,8 @@ class Tag_retriever(threading.Thread):
         self.clean_server()
         json = self.r_analysis.json()['task']
         if self.returnkw is None:
-            self.rval = json
             return json
-        rval = dict((item, json[item]) for item in self.returnkw)
-        self.rval = rval
-        return rval
+        return dict((item, json[item]) for item in self.returnkw)
 
     def upload(self):
         self.r_upload = requests.post(

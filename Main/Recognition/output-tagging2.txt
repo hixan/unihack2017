@@ -1,0 +1,16 @@
+
+fridge2.jpg
+	orange Bounding Box: Left=1018, Top=258, Right=1145, Bottom=399 49.0 {
+	apple Bounding Box: Left=645, Top=351, Right=816, Bottom=495 26.0 
+
+	apple Bounding Box: Left=753, Top=347, Right=956, Bottom=501 36.0  
+	orange Bounding Box: Left=936, Top=317, Right=1110, Bottom=509 58.0  
+	orange Bounding Box: Left=1069, Top=366, Right=1165, Bottom=525 59.0 "
+	apple Bounding Box: Left=625, Top=560, Right=791, Bottom=710 58.0 t
+	apple Bounding Box: Left=807, Top=553, Right=1031, Bottom=677 40.0 a
+	carrot Bounding Box: Left=5, Top=651, Right=221, Bottom=797 37.0 s
+	carrot Bounding Box: Left=75, Top=647, Right=393, Bottom=803 57.0 k
+	apple Bounding Box: Left=759, Top=632, Right=947, Bottom=756 51.0 "
+	apple Bounding Box: Left=910, Top=624, Right=1093, Bottom=752 68.0 :
+	carrot Bounding Box: Left=25, Top=718, Right=256, Bottom=839 30.0  
+	bowl Bounding Box: Left=596, Top=516, Right=1150, Bottom=837 81.0 {
