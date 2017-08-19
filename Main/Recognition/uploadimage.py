@@ -70,11 +70,14 @@ class Tag_retriever(threading.Thread):
         self.url = 'http://smartvision.aiam-dh.com:8080/api/v1.0/tasks'
 
     def run(self, logfile=None):
+        print("starting upload for method: {}\nkeywords: {}\n...".format(self.method, self.returnkw), file=logfile)
         self.upload()
+        print("starting analysis for method: {}\nkeywords: {}\n...".format(self.method, self.returnkw), file=logfile)
         self.start_analysis()
+        print("cleaning data for method: {}\nkeywords: {}\n...".format(self.method, self.returnkw), file=logfile)
         self.clean_server()
         json = self.r_analysis.json()['task']
-        return [json[item] for item in self.returnkw][0] # unsure why [0] is necessary
+        return [json[item] for item in self.returnkw]
 
     def upload(self):
         self.r_upload = requests.post(
@@ -85,7 +88,7 @@ class Tag_retriever(threading.Thread):
         )
         self.im_id = re.search(r'\d+$', self.r_upload.json()['task']['uri']).group(0)
 
-    def start_analysis{}s.format():)
+    def start_analysis(self):
         self.r_analysis = requests.put(self.url+'/run/'+self.im_id, auth=self.auth, headers=self.headers, data=json.dumps({'scanned':True}))
 
     def clean_server(self):
@@ -100,8 +103,9 @@ if __name__ == '__main__':
         tag_retriever = Tag_retriever(im_byte_arr, 'tagging3', ['description'])
         result = tag_retriever.run()
         print(result)
-        #for tag in result:
-            #im.crop(*list(map(lambda x : x[1], re.findall(r'(Left|Top|Right|Bottom)=(\d+)', tag))))
+        for tag in result[0]:
+            values = map(lambda x : int(x[1]), re.findall(r'(Left|Top|Right|Bottom)=(\d+)', tag))
+            im.crop(values)
 
 
 
