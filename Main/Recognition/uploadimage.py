@@ -77,7 +77,9 @@ class Tag_retriever(threading.Thread):
         print("cleaning data for method: {}\nkeywords: {}\n...".format(self.method, self.returnkw), file=logfile)
         self.clean_server()
         json = self.r_analysis.json()['task']
-        return [json[item] for item in self.returnkw]
+        if self.returnkw is None:
+            return json
+        return dict((item, json[item]) for item in self.returnkw)
 
     def upload(self):
         self.r_upload = requests.post(
@@ -94,20 +96,50 @@ class Tag_retriever(threading.Thread):
     def clean_server(self):
         self.r_delete = requests.delete(self.url+'/'+self.im_id, auth=self.auth, headers=self.headers)
         
+def get_tags_text(image, outputfile):
+    im_byte_arr = io.BytesIO()
+    image.save(im_byte_arr, format='JPEG')
+    im_byte_arr = im_byte_arr.getvalue()
+    tag_retriever = Tag_retriever(im_byte_arr, 'tagging3', ['description'])
+    print('\nprocessing {}...:'.format(image), file=outputfile)
+    result = tag_retriever.run(open('NUL', 'w'))
+    print('\nfound tags:\n{}'.format(result['description']))
+    rval = {}
+    for tag in result['description']:
+        values = map(lambda x : int(x[1]), re.findall(r'(Left|Top|Right|Bottom)=(\d+)', tag))
+        tag = re.search(r'(\w+) Bounding Box:', tag).group(1)
+        cropped_byte_array = io.BytesIO()
+        cropped = image.crop(values)
+        cropped.save(cropped_byte_array, format='JPEG')
+        cropped_byte_array = cropped_byte_array.getvalue()
+        cropped_retriever = Tag_retriever(cropped_byte_array, 'text1', ['description'])
+        textresult = cropped_retriever.run(open('NUL', 'w'))
+        print('Tag "{}" at {} came up with this text:\n"{}"'.format(tag, ','.join(map(str, values)), textresult['description']), file=outputfile)
+        rval[tag] = textresult['description']
+    return rval
+
 if __name__ == '__main__':
-    image = 'fridge contents.jpg'
+    with Image.open('sample images/pantry5.jpg', 'r') as image_file:
+        for key, value in get_tags_text(image_file, open('NUL', 'w')).items():
+            print(key, '"'+value+'"')
+
+    '''
+    image = 'pantry4.jpg'
+    outputfile = None
     with Image.open('sample images/'+image) as im:
         im_byte_arr = io.BytesIO()
         im.save(im_byte_arr, format='JPEG')
         im_byte_arr = im_byte_arr.getvalue()
         tag_retriever = Tag_retriever(im_byte_arr, 'tagging3', ['description'])
         result = tag_retriever.run()
-        print(result)
-        for tag in result[0]:
+        for tag in result['description']:
             values = map(lambda x : int(x[1]), re.findall(r'(Left|Top|Right|Bottom)=(\d+)', tag))
-            im.crop(values)
-
-
-
-
-
+            tag = re.search(r'(\w+) Bounding Box:', tag).group(1)
+            cropped_byte_array = io.BytesIO()
+            cropped = im.crop(values)
+            cropped.save(cropped_byte_array, format='JPEG')
+            cropped_byte_array = cropped_byte_array.getvalue()
+            cropped_retriever = Tag_retriever(cropped_byte_array, 'text1', ['description'])
+            textresult = cropped_retriever.run(open('NUL', 'w'))
+            print('Tag "{}" at {} came up with this text:\n{}'.format(tag, ','.join(map(str, values)), textresult), file=outputfile)
+'''
