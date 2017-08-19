@@ -1,8 +1,3 @@
-.testing{
-  direction:ltr;
-  text-align: center;
-}
-
 .header{
   border:2px;
   color:black;
@@ -15,7 +10,6 @@
   padding-left:20px;
   padding-bottom:10px;
   color:#880022;
-  font-style:italic;
   text-decoration:none;
 }
 .header-nav{
@@ -66,6 +60,10 @@ body {
 .upload-box{
   text-align:center;
 }
+.sidebar-float{
+  float:left;
+  margin-left:10px;
+}
 .box {
   text-align:center;
 }
@@ -76,31 +74,51 @@ button, input {
 
 .inputfile + label {
   max-width: 80%;
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 700;
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
   display: inline-block;
   overflow: hidden;
-  padding:10px;
+  padding:15px;
   border-radius:5px;
-  border:
 }
 
 .inputfile-1 + label {
   color: #f1e5e6;
-  background-color: #d3394c;
+  background-color: #996688;
 }
 
+heading {
+  font-size: 30px;
+  font-weight: 500;
+}
+sub-heading{
+  font-size: 20px;
+  font-weight: 300;
+}
 
 .body{
   border:2px;
   border-style:solid;
-  margin-left:2.5%;
-  margin-right:2.5%;
-  margin-top:2.5%;
-  margin-bottom:2.5%;
-  width:95%;
-  background-color: #aaffaa;
+  padding:5px;
+  margin-right:20%;
+  margin-left:20%;
+  border-radius:5px;
+}
+
+.recipe-text{
+}
+.ui-box{
+  width:100%;
+}
+.recipe{
+  background-color:white;
+  border-color:#eeeeee;
+  border-style:solid;
+  border-width:5px;
+  border-radius:20px;
+  margin:15px;
+  overflow:hide;
 }

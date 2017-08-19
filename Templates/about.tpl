@@ -9,12 +9,7 @@
 
 <body>
   <div class="header">
-    <H1 class="header-text"><a href="./home">Home</a></H1>
-    <ul class="header-nav">
-      <li class="nav-item"><a href="./upload">Upload a file</a></li>
-      <li class="nav-item"><a href="./index">Index</a></li>
-      <li class="nav-item"><a href="./recipes">Recipes</a></li>
-    </ul>
+    <H1 class="header-text"><a href="./">Home</a></H1>
   </div>
   
   <div class="body">
