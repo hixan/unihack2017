@@ -24,7 +24,7 @@ def recipes():
     test_data_ingr = ["milk", "eggs", "flour", "rice", "ham", "bacon", "oil", "chicken", "buns"]
     test_data, ingredients = get_recipes()
     test_data_ingr = ingredients
-    f = lambda x : x[1]-x[0]*.1
+    f = lambda x : x[1]-x[0]*.01
     test_data_ingr = sorted(test_data_ingr)
     test_data = sorted(test_data, key=f)
     for line in test_data:

@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="utf-8" />
-<title>Home</title>
+<title>About</title>
 <link rel="stylesheet" href="static/main.css">
 </head>
 
