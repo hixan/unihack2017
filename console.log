@@ -1,0 +1,513 @@
+starting upload for method: tagging3
+keywords: ['description']
+...
+{
+  "task": {
+    "confidence": "", 
+    "description": "", 
+    "image": "Uploaded", 
+    "scanned": false, 
+    "service": "tagging3", 
+    "uri": "http://smartvision.aiam-dh.com:8080/api/v1.0/tasks/1407", 
+    "userid": 13
+  }
+}
+
+starting analysis for method: tagging3
+keywords: ['description']
+...
+{
+  "task": {
+    "confidence": [], 
+    "description": [], 
+    "image": "Uploaded", 
+    "scanned": true, 
+    "service": "tagging3", 
+    "uri": "http://smartvision.aiam-dh.com:8080/api/v1.0/tasks/1407", 
+    "userid": 13
+  }
+}
+
+cleaning data for method: tagging3
+keywords: ['description']
+...
+{
+  "result": true
+}
+
+starting upload for method: tagging3
+keywords: ['description']
+...
+{
+  "task": {
+    "confidence": "", 
+    "description": "", 
+    "image": "Uploaded", 
+    "scanned": false, 
+    "service": "tagging3", 
+    "uri": "http://smartvision.aiam-dh.com:8080/api/v1.0/tasks/1435", 
+    "userid": 13
+  }
+}
+
+starting analysis for method: tagging3
+keywords: ['description']
+...
+{
+  "task": {
+    "confidence": [], 
+    "description": [], 
+    "image": "Uploaded", 
+    "scanned": true, 
+    "service": "tagging3", 
+    "uri": "http://smartvision.aiam-dh.com:8080/api/v1.0/tasks/1435", 
+    "userid": 13
+  }
+}
+
+cleaning data for method: tagging3
+keywords: ['description']
+...
+{
+  "result": true
+}
+
+starting upload for method: tagging3
+keywords: ['description']
+...
+{
+  "task": {
+    "confidence": "", 
+    "description": "", 
+    "image": "Uploaded", 
+    "scanned": false, 
+    "service": "tagging3", 
+    "uri": "http://smartvision.aiam-dh.com:8080/api/v1.0/tasks/1463", 
+    "userid": 13
+  }
+}
+
+starting analysis for method: tagging3
+keywords: ['description']
+...
+{
+  "task": {
+    "confidence": [], 
+    "description": [], 
+    "image": "Uploaded", 
+    "scanned": true, 
+    "service": "tagging3", 
+    "uri": "http://smartvision.aiam-dh.com:8080/api/v1.0/tasks/1463", 
+    "userid": 13
+  }
+}
+
+cleaning data for method: tagging3
+keywords: ['description']
+...
+{
+  "result": true
+}
+
+starting upload for method: tagging3
+keywords: ['description']
+...
+{
+  "task": {
+    "confidence": "", 
+    "description": "", 
+    "image": "Uploaded", 
+    "scanned": false, 
+    "service": "tagging3", 
+    "uri": "http://smartvision.aiam-dh.com:8080/api/v1.0/tasks/1486", 
+    "userid": 13
+  }
+}
+
+starting analysis for method: tagging3
+keywords: ['description']
+...
+{
+  "task": {
+    "confidence": [
+      "25.0", 
+      "35.0", 
+      "49.0", 
+      "35.0", 
+      "34.0", 
+      "25.0", 
+      "25.0", 
+      "33.0", 
+      "24.0", 
+      "33.0", 
+      "69.0", 
+      "50.0", 
+      "50.0", 
+      "79.0"
+    ], 
+    "description": [
+      "cup Bounding Box: Left=547, Top=339, Right=650, Bottom=437", 
+      "cup Bounding Box: Left=105, Top=548, Right=225, Bottom=664", 
+      "orange Bounding Box: Left=307, Top=516, Right=426, Bottom=641", 
+      "orange Bounding Box: Left=474, Top=552, Right=606, Bottom=644", 
+      "bottle Bounding Box: Left=675, Top=672, Right=738, Bottom=830", 
+      "apple Bounding Box: Left=665, Top=829, Right=733, Bottom=925", 
+      "apple Bounding Box: Left=133, Top=1042, Right=266, Bottom=1135", 
+      "orange Bounding Box: Left=652, Top=1002, Right=727, Bottom=1124", 
+      "apple Bounding Box: Left=365, Top=1356, Right=461, Bottom=1444", 
+      "orange Bounding Box: Left=627, Top=1338, Right=733, Bottom=1442", 
+      "bottle Bounding Box: Left=132, Top=111, Right=254, Bottom=426", 
+      "bottle Bounding Box: Left=250, Top=158, Right=343, Bottom=395", 
+      "bottle Bounding Box: Left=424, Top=213, Right=533, Bottom=421", 
+      "refrigerator Bounding Box: Left=12, Top=35, Right=997, Bottom=1445"
+    ], 
+    "image": "Uploaded", 
+    "scanned": true, 
+    "service": "tagging3", 
+    "uri": "http://smartvision.aiam-dh.com:8080/api/v1.0/tasks/1486", 
+    "userid": 13
+  }
+}
+
+cleaning data for method: tagging3
+keywords: ['description']
+...
+{
+  "result": true
+}
+
+starting upload for method: tagging3
+keywords: ['description']
+...
+{
+  "task": {
+    "confidence": "", 
+    "description": "", 
+    "image": "Uploaded", 
+    "scanned": false, 
+    "service": "tagging3", 
+    "uri": "http://smartvision.aiam-dh.com:8080/api/v1.0/tasks/1503", 
+    "userid": 13
+  }
+}
+
+starting analysis for method: tagging3
+keywords: ['description']
+...
+{
+  "task": {
+    "confidence": [
+      "25.0", 
+      "35.0", 
+      "49.0", 
+      "35.0", 
+      "34.0", 
+      "25.0", 
+      "25.0", 
+      "33.0", 
+      "24.0", 
+      "33.0", 
+      "69.0", 
+      "50.0", 
+      "50.0", 
+      "79.0"
+    ], 
+    "description": [
+      "cup Bounding Box: Left=547, Top=339, Right=650, Bottom=437", 
+      "cup Bounding Box: Left=105, Top=548, Right=225, Bottom=664", 
+      "orange Bounding Box: Left=307, Top=516, Right=426, Bottom=641", 
+      "orange Bounding Box: Left=474, Top=552, Right=606, Bottom=644", 
+      "bottle Bounding Box: Left=675, Top=672, Right=738, Bottom=830", 
+      "apple Bounding Box: Left=665, Top=829, Right=733, Bottom=925", 
+      "apple Bounding Box: Left=133, Top=1042, Right=266, Bottom=1135", 
+      "orange Bounding Box: Left=652, Top=1002, Right=727, Bottom=1124", 
+      "apple Bounding Box: Left=365, Top=1356, Right=461, Bottom=1444", 
+      "orange Bounding Box: Left=627, Top=1338, Right=733, Bottom=1442", 
+      "bottle Bounding Box: Left=132, Top=111, Right=254, Bottom=426", 
+      "bottle Bounding Box: Left=250, Top=158, Right=343, Bottom=395", 
+      "bottle Bounding Box: Left=424, Top=213, Right=533, Bottom=421", 
+      "refrigerator Bounding Box: Left=12, Top=35, Right=997, Bottom=1445"
+    ], 
+    "image": "Uploaded", 
+    "scanned": true, 
+    "service": "tagging3", 
+    "uri": "http://smartvision.aiam-dh.com:8080/api/v1.0/tasks/1503", 
+    "userid": 13
+  }
+}
+
+cleaning data for method: tagging3
+keywords: ['description']
+...
+{
+  "result": true
+}
+
+starting upload for method: tagging3
+keywords: ['description']
+...
+{
+  "task": {
+    "confidence": "", 
+    "description": "", 
+    "image": "Uploaded", 
+    "scanned": false, 
+    "service": "tagging3", 
+    "uri": "http://smartvision.aiam-dh.com:8080/api/v1.0/tasks/1521", 
+    "userid": 13
+  }
+}
+
+starting analysis for method: tagging3
+keywords: ['description']
+...
+{
+  "task": {
+    "confidence": [
+      "25.0", 
+      "35.0", 
+      "49.0", 
+      "35.0", 
+      "34.0", 
+      "25.0", 
+      "25.0", 
+      "33.0", 
+      "24.0", 
+      "33.0", 
+      "69.0", 
+      "50.0", 
+      "50.0", 
+      "79.0"
+    ], 
+    "description": [
+      "cup Bounding Box: Left=547, Top=339, Right=650, Bottom=437", 
+      "cup Bounding Box: Left=105, Top=548, Right=225, Bottom=664", 
+      "orange Bounding Box: Left=307, Top=516, Right=426, Bottom=641", 
+      "orange Bounding Box: Left=474, Top=552, Right=606, Bottom=644", 
+      "bottle Bounding Box: Left=675, Top=672, Right=738, Bottom=830", 
+      "apple Bounding Box: Left=665, Top=829, Right=733, Bottom=925", 
+      "apple Bounding Box: Left=133, Top=1042, Right=266, Bottom=1135", 
+      "orange Bounding Box: Left=652, Top=1002, Right=727, Bottom=1124", 
+      "apple Bounding Box: Left=365, Top=1356, Right=461, Bottom=1444", 
+      "orange Bounding Box: Left=627, Top=1338, Right=733, Bottom=1442", 
+      "bottle Bounding Box: Left=132, Top=111, Right=254, Bottom=426", 
+      "bottle Bounding Box: Left=250, Top=158, Right=343, Bottom=395", 
+      "bottle Bounding Box: Left=424, Top=213, Right=533, Bottom=421", 
+      "refrigerator Bounding Box: Left=12, Top=35, Right=997, Bottom=1445"
+    ], 
+    "image": "Uploaded", 
+    "scanned": true, 
+    "service": "tagging3", 
+    "uri": "http://smartvision.aiam-dh.com:8080/api/v1.0/tasks/1521", 
+    "userid": 13
+  }
+}
+
+cleaning data for method: tagging3
+keywords: ['description']
+...
+{
+  "result": true
+}
+
+starting upload for method: tagging3
+keywords: ['description']
+...
+{
+  "task": {
+    "confidence": "", 
+    "description": "", 
+    "image": "Uploaded", 
+    "scanned": false, 
+    "service": "tagging3", 
+    "uri": "http://smartvision.aiam-dh.com:8080/api/v1.0/tasks/1540", 
+    "userid": 13
+  }
+}
+
+starting analysis for method: tagging3
+keywords: ['description']
+...
+{
+  "task": {
+    "confidence": [
+      "25.0", 
+      "35.0", 
+      "49.0", 
+      "35.0", 
+      "34.0", 
+      "25.0", 
+      "25.0", 
+      "33.0", 
+      "24.0", 
+      "33.0", 
+      "69.0", 
+      "50.0", 
+      "50.0", 
+      "79.0"
+    ], 
+    "description": [
+      "cup Bounding Box: Left=547, Top=339, Right=650, Bottom=437", 
+      "cup Bounding Box: Left=105, Top=548, Right=225, Bottom=664", 
+      "orange Bounding Box: Left=307, Top=516, Right=426, Bottom=641", 
+      "orange Bounding Box: Left=474, Top=552, Right=606, Bottom=644", 
+      "bottle Bounding Box: Left=675, Top=672, Right=738, Bottom=830", 
+      "apple Bounding Box: Left=665, Top=829, Right=733, Bottom=925", 
+      "apple Bounding Box: Left=133, Top=1042, Right=266, Bottom=1135", 
+      "orange Bounding Box: Left=652, Top=1002, Right=727, Bottom=1124", 
+      "apple Bounding Box: Left=365, Top=1356, Right=461, Bottom=1444", 
+      "orange Bounding Box: Left=627, Top=1338, Right=733, Bottom=1442", 
+      "bottle Bounding Box: Left=132, Top=111, Right=254, Bottom=426", 
+      "bottle Bounding Box: Left=250, Top=158, Right=343, Bottom=395", 
+      "bottle Bounding Box: Left=424, Top=213, Right=533, Bottom=421", 
+      "refrigerator Bounding Box: Left=12, Top=35, Right=997, Bottom=1445"
+    ], 
+    "image": "Uploaded", 
+    "scanned": true, 
+    "service": "tagging3", 
+    "uri": "http://smartvision.aiam-dh.com:8080/api/v1.0/tasks/1540", 
+    "userid": 13
+  }
+}
+
+cleaning data for method: tagging3
+keywords: ['description']
+...
+{
+  "result": true
+}
+
+starting upload for method: tagging3
+keywords: ['description']
+...
+{
+  "task": {
+    "confidence": "", 
+    "description": "", 
+    "image": "Uploaded", 
+    "scanned": false, 
+    "service": "tagging3", 
+    "uri": "http://smartvision.aiam-dh.com:8080/api/v1.0/tasks/1602", 
+    "userid": 13
+  }
+}
+
+starting analysis for method: tagging3
+keywords: ['description']
+...
+{
+  "task": {
+    "confidence": [
+      "25.0", 
+      "35.0", 
+      "49.0", 
+      "35.0", 
+      "34.0", 
+      "25.0", 
+      "25.0", 
+      "33.0", 
+      "24.0", 
+      "33.0", 
+      "69.0", 
+      "50.0", 
+      "50.0", 
+      "79.0"
+    ], 
+    "description": [
+      "cup Bounding Box: Left=547, Top=339, Right=650, Bottom=437", 
+      "cup Bounding Box: Left=105, Top=548, Right=225, Bottom=664", 
+      "orange Bounding Box: Left=307, Top=516, Right=426, Bottom=641", 
+      "orange Bounding Box: Left=474, Top=552, Right=606, Bottom=644", 
+      "bottle Bounding Box: Left=675, Top=672, Right=738, Bottom=830", 
+      "apple Bounding Box: Left=665, Top=829, Right=733, Bottom=925", 
+      "apple Bounding Box: Left=133, Top=1042, Right=266, Bottom=1135", 
+      "orange Bounding Box: Left=652, Top=1002, Right=727, Bottom=1124", 
+      "apple Bounding Box: Left=365, Top=1356, Right=461, Bottom=1444", 
+      "orange Bounding Box: Left=627, Top=1338, Right=733, Bottom=1442", 
+      "bottle Bounding Box: Left=132, Top=111, Right=254, Bottom=426", 
+      "bottle Bounding Box: Left=250, Top=158, Right=343, Bottom=395", 
+      "bottle Bounding Box: Left=424, Top=213, Right=533, Bottom=421", 
+      "refrigerator Bounding Box: Left=12, Top=35, Right=997, Bottom=1445"
+    ], 
+    "image": "Uploaded", 
+    "scanned": true, 
+    "service": "tagging3", 
+    "uri": "http://smartvision.aiam-dh.com:8080/api/v1.0/tasks/1602", 
+    "userid": 13
+  }
+}
+
+cleaning data for method: tagging3
+keywords: ['description']
+...
+{
+  "result": true
+}
+
+starting upload for method: tagging3
+keywords: ['description']
+...
+{
+  "task": {
+    "confidence": "", 
+    "description": "", 
+    "image": "Uploaded", 
+    "scanned": false, 
+    "service": "tagging3", 
+    "uri": "http://smartvision.aiam-dh.com:8080/api/v1.0/tasks/1630", 
+    "userid": 13
+  }
+}
+
+starting analysis for method: tagging3
+keywords: ['description']
+...
+{
+  "task": {
+    "confidence": [
+      "25.0", 
+      "35.0", 
+      "49.0", 
+      "35.0", 
+      "34.0", 
+      "25.0", 
+      "25.0", 
+      "33.0", 
+      "24.0", 
+      "33.0", 
+      "69.0", 
+      "50.0", 
+      "50.0", 
+      "79.0"
+    ], 
+    "description": [
+      "cup Bounding Box: Left=547, Top=339, Right=650, Bottom=437", 
+      "cup Bounding Box: Left=105, Top=548, Right=225, Bottom=664", 
+      "orange Bounding Box: Left=307, Top=516, Right=426, Bottom=641", 
+      "orange Bounding Box: Left=474, Top=552, Right=606, Bottom=644", 
+      "bottle Bounding Box: Left=675, Top=672, Right=738, Bottom=830", 
+      "apple Bounding Box: Left=665, Top=829, Right=733, Bottom=925", 
+      "apple Bounding Box: Left=133, Top=1042, Right=266, Bottom=1135", 
+      "orange Bounding Box: Left=652, Top=1002, Right=727, Bottom=1124", 
+      "apple Bounding Box: Left=365, Top=1356, Right=461, Bottom=1444", 
+      "orange Bounding Box: Left=627, Top=1338, Right=733, Bottom=1442", 
+      "bottle Bounding Box: Left=132, Top=111, Right=254, Bottom=426", 
+      "bottle Bounding Box: Left=250, Top=158, Right=343, Bottom=395", 
+      "bottle Bounding Box: Left=424, Top=213, Right=533, Bottom=421", 
+      "refrigerator Bounding Box: Left=12, Top=35, Right=997, Bottom=1445"
+    ], 
+    "image": "Uploaded", 
+    "scanned": true, 
+    "service": "tagging3", 
+    "uri": "http://smartvision.aiam-dh.com:8080/api/v1.0/tasks/1630", 
+    "userid": 13
+  }
+}
+
+cleaning data for method: tagging3
+keywords: ['description']
+...
+{
+  "result": true
+}
+
