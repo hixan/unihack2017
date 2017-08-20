@@ -22,8 +22,9 @@ def upload():
 @route('/recipes')
 def recipes():
     test_data_ingr = ["milk", "eggs", "flour", "rice", "ham", "bacon", "oil", "chicken", "buns"]
-    test_data = get_recipes()
-    f = lambda x : (x[1])/(x[0]+1)
+    test_data, ingredients = get_recipes()
+    test_data_ingr = ingredients
+    f = lambda x : x[1]-x[0]*.1
     test_data = sorted(test_data, key=f)
     for line in test_data:
         print(line)

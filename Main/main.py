@@ -31,14 +31,19 @@ def get_recipes():
         for thread in threads:
             thread.join()
         ingredients = [t.rval['description'] for t in threads]
-    print(ingredients)
 
+    # old ingredients
     ingredients.append('salt')
     ingredients.append('pepper')
     ingredients.append('spices')
     ingredients.append('butter')
+    with open('Main/existing_ingredients.txt', 'r') as readfile:
+        for i in readfile.readlines():
+            ingredients.append(i)
     ingredients = set(ingredients)
-    print(ingredients)
+    with open('Main/existing_ingredients.txt', 'w') as readfile:
+        for i in ingredients:
+            print(i, file=readfile)
     rval = []
     for recipe in recipes:
         to_add = False
@@ -54,5 +59,5 @@ def get_recipes():
             else:
                 notfound += 1
         rval.append((found, notfound, recipe))
-    return rval
+    return rval, ingredients
     #print('rval: {}'.format(str(rval)))
