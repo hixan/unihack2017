@@ -45,20 +45,22 @@
       %for ingredient in ingredients:
         <input type="checkbox" name="ingredient" value={{ingredient}}> {{ingredient}}<br>
       %end
-      <input type="submit" style="width:50px; text-align:center;" value="Submit">
+      <input type="submit" style="width:100px; text-align:center;" value="Submit">
     </form>
   </div>
   <div class="body">
     <p><heading>Recipes</heading><br />
     </p>
     <table class="ui-box">
-      % for key, value in recipes.items():
-        %print(key, value)
+      % for recipe in recipes:
+        %print(recipe)
         <tr>
         <td class="recipe">
-          <div class="recipe-text"><a href={{value['link']}}>{{value['title']}}<br/></a>
-          <p>serves: {{value['yield']}}</a></div>
-          <img src={{value['picLink']}} alt={{value['title']}} align-content="right" style="width:80%; margin-left:20%; max-height:500px;float:right;" >
+          <div class="recipe-text"><a href={{recipe[2]['link']}}>{{recipe[2]['title']}}<br/></a>
+          <p>serves: {{recipe[2]['yield']}}</p>
+          <p>ingredients you have: {{recipe[0]}}</p>
+          <p>ingredients you don't have: {{recipe[1]}}</p></div>
+          <img src={{recipe[2]['picLink']}} alt={{recipe[2]['title']}} align-content="right" style="width:80%; margin-left:20%; max-height:500px;float:right;" >
         </td>
         </tr>
       % end

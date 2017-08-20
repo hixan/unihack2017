@@ -65,6 +65,7 @@ body {
   margin-left:1%;
   width:15%;
   white-space:nowrap;
+  min-width:100px;
 }
 .box {
   text-align:center;

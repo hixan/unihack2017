@@ -10,10 +10,6 @@ def server_static(filename):
 def home():
     return template("Templates/landing.tpl")
 
-@route('/index')
-def index():
-    return template("Templates/index.tpl")
-
 @route('/uploading', method='POST')
 def upload():
     ingredient = request.forms.getall('ingredient')
@@ -27,8 +23,11 @@ def upload():
 def recipes():
     test_data_ingr = ["milk", "eggs", "flour", "rice", "ham", "bacon", "oil", "chicken", "buns"]
     test_data = get_recipes()
+    f = lambda x : (x[1])/(x[0]+1)
+    test_data = sorted(test_data, key=f)
     for line in test_data:
         print(line)
+        print(f(line))
     return template("Templates/recipes.tpl", recipes=test_data, ingredients=test_data_ingr)
 
 @route('/upload', method='POST')
