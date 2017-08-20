@@ -25,11 +25,12 @@ def recipes():
     test_data, ingredients = get_recipes()
     test_data_ingr = ingredients
     f = lambda x : x[1]-x[0]*.1
+    test_data_ingr = sorted(test_data_ingr)
     test_data = sorted(test_data, key=f)
     for line in test_data:
         print(line)
         print(f(line))
-    return template("Templates/recipes.tpl", recipes=test_data, ingredients=test_data_ingr)
+    return template("Templates/recipes.tpl", recipes=test_data, ingredients=test_data_ingr[1::2])
 
 @route('/upload', method='POST')
 def do_upload():

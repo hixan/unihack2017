@@ -12,7 +12,7 @@
 
 <body>
   <div>
-    <H1 class="header-text"><a href="./">Home</a></H1>
+    <H1 class="header-text"><a href="./">Pantry Meals</a></H1>
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -41,12 +41,12 @@
         </div>
       </form>
     </div>
-    <form action="/uploading" method="post" id="form2">
+    <a style="text-decoration:none;">Ingredients</a>
+    <ul>
       %for ingredient in ingredients:
-        <input type="checkbox" name="ingredient" value={{ingredient}}> {{ingredient}}<br>
+        <li><a style="text-decoration:none;">{{ingredient.capitalize()}}</a></li>
       %end
-      <button type="button" onClick="onSubmit()" style="border-radius:5px; border-width:1px; border-style:solid; border-color:black;padding-left:10px; padding-right:10px; padding-top:3px; padding-bottom:3px; background-color:#333333;color:#ffffff;font-size:15px;"> Submit</button>
-    </form>
+    </ul>
   </div>
   <div class="body">
     <p><heading>Recipes</heading><br />
@@ -76,9 +76,6 @@
     }
     document.getElementById("file").onchange = function() {
       document.getElementById("form").submit();
-    }
-    function onSubmit(){
-      document.getElementById("form2").submit();
     }
   </script>
 

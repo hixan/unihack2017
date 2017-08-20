@@ -12,7 +12,7 @@
 
 <body>
   <div>
-    <H1 class="header-text"><a href="./">Home</a></H1>
+    <H1 class="header-text"><a href="./">Pantry Meals</a></H1>
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">

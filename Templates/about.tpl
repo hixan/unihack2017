@@ -9,7 +9,7 @@
 
 <body>
   <div class="header">
-    <H1 class="header-text"><a href="./">Home</a></H1>
+    <H1 class="header-text"><a href="./">Pantry Meals</a></H1>
   </div>
   
   <div class="body">
