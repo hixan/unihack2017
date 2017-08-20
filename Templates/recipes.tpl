@@ -41,11 +41,11 @@
         </div>
       </form>
     </div>
-    <form action="/uploading" method="post">
+    <form action="/uploading" method="post" id="form2">
       %for ingredient in ingredients:
         <input type="checkbox" name="ingredient" value={{ingredient}}> {{ingredient}}<br>
       %end
-      <input type="submit" style="width:100px; text-align:center;" value="Submit">
+      <button type="button" onClick="onSubmit()" style="border-radius:5px; border-width:1px; border-style:solid; border-color:black;padding-left:10px; padding-right:10px; padding-top:3px; padding-bottom:3px; background-color:#333333;color:#ffffff;font-size:15px;"> Submit</button>
     </form>
   </div>
   <div class="body">
@@ -76,7 +76,10 @@
     }
     document.getElementById("file").onchange = function() {
       document.getElementById("form").submit();
-    };
+    }
+    function onSubmit(){
+      document.getElementById("form2").submit();
+    }
   </script>
 
 </body>
